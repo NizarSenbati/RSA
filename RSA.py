@@ -85,11 +85,14 @@ class RSA():
         print(f"test2: {test2}, test1: {test}")
         if test == 1:
             print("clé privée testée!")
+            print(f"clées publiques: (n: {self.n}, e: {self.e})")
+            print(f"clées privées: (n: {self.n}, d: {self.d})")
         else:
             print("clé privée incorrecte!")
         print("-------------------------------------------------")
 
     def valeurs(self):
+        print("entrez p et q les deux premiers pour générer les clés: ")
         self.p = input("entrez p: ")
         self.q = input("entrez q: ")
         # self.p = 7
